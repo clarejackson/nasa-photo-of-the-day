@@ -1,6 +1,6 @@
 import React from "react";
 import CardHeader from "./CardHeader"
-
+import CardDescription from "./CardDescription"
 
 const Card = (props) => {
   const { photo, description, header } = props.apod
@@ -8,6 +8,7 @@ const Card = (props) => {
     <div>
     <img src={photo}/>
     <CardHeader header={header}/>
+    <CardDescription description={description}/>
     </div>
   );
 };
