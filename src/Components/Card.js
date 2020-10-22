@@ -1,6 +1,8 @@
 import React from "react";
-import CardHeader from "./CardHeader"
-import CardDescription from "./CardDescription"
+import CardHeader from "./CardHeader";
+import CardDescription from "./CardDescription";
+import {} from 'reactstrap';
+
 
 const Card = (props) => {
   const { photo, description, header } = props.apod
