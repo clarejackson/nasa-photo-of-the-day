@@ -1,17 +1,13 @@
 import React from "react";
-
+import { CardTitle } from "reactstrap"
 
 const CardHeader = (props) => {
 
   return (
     <div>
-      <h2>{props.header}</h2>
+      <CardTitle>{props.header}</CardTitle>
     </div>
   
   )}
-
-
-
-
 
 export default CardHeader;

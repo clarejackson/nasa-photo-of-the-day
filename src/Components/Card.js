@@ -1,29 +1,21 @@
 import React from "react";
 import CardHeader from "./CardHeader";
 import CardDescription from "./CardDescription";
-import {} from 'reactstrap';
+import { Card, CardImg } from 'reactstrap';
 
 
-const Card = (props) => {
+const NasaCard = (props) => {
   const { photo, description, header } = props.apod
   return (
     <div>
-    <img src={photo}/>
+    <Card body inverse color="info">
+    <CardImg top width="100%" src={photo} alt="NASA photo of the day"/>
     <CardHeader header={header}/>
     <CardDescription description={description}/>
+    </Card>
     </div>
   );
 };
 
 
-//return h2 card
-
-
-
-
-
-
-
-
-
-export default Card;
+export default NasaCard;
